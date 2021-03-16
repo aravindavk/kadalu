@@ -63,7 +63,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: csi/Dockerfile.frombuilder
+          file: csi/Dockerfile
           platforms: linux/arm64,linux/arm/v7
           target: prod
           push: true
@@ -80,7 +80,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: operator/Dockerfile.frombuild
+          file: operator/Dockerfile
           platforms: linux/arm64,linux/arm/v7
           target: prod
           push: true
@@ -97,7 +97,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: server/Dockerfile.frombuilder
+          file: server/Dockerfile
           platforms: linux/arm64,linux/arm/v7
           target: prod
           push: true
