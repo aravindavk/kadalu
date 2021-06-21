@@ -4,23 +4,11 @@
 
 Download the latest release of Kadalu Kubectl plugin using,
 
-[source,console]
+[source,text]
 ----
-curl -LO https://github.com/kadalu/kadalu/releases/download/0.8.2/kubectl-kadalu
-----
-
-Make the kubectl binary executable.
-
-[source,console]
-----
-$ chmod +x ./kubectl-kadalu
-----
-
-Move the binary in to your PATH.
-
-[source,console]
-----
-$ sudo mv ./kubectl-kadalu /usr/local/bin/kubectl-kadalu
+curl -LO https://github.com/kadalu/kadalu/releases/latest/download/kubectl-kadalu
+chmod +x ./kubectl-kadalu
+sudo mv ./kubectl-kadalu /usr/local/bin/kubectl-kadalu
 ----
 
 Note: In the case of Openshift,
